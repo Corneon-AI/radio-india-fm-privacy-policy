@@ -7,7 +7,6 @@
   <title>Radio India : Live FM and Music | Privacy Policy | Corneon AI</title>
 
   <meta name="description" content="Privacy Policy for Radio India : Live FM and Music by Corneon AI." />
-
   <meta name="theme-color" content="#b76e79" />
 
   <style>
@@ -22,39 +21,88 @@
       --r:22px;
       --shadow: 0 20px 80px rgba(0,0,0,.55);
     }
+
     *{ box-sizing:border-box; }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color: var(--text);
       background:
         radial-gradient(900px 520px at 15% 10%, rgba(183,110,121,.35), transparent 55%),
         radial-gradient(800px 540px at 85% 15%, rgba(124,58,237,.30), transparent 55%),
         var(--bg);
     }
-    .container{ max-width: 980px; margin:0 auto; padding: 22px 16px 60px; }
+
+    .container{
+      max-width: 980px;
+      margin:0 auto;
+      padding: 22px 16px 60px;
+    }
+
     .topbar{
-      display:flex; justify-content:space-between; align-items:center; gap:12px;
-      position: sticky; top:0; z-index:10;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      position: sticky;
+      top:0;
+      z-index:10;
       padding: 14px 0;
       backdrop-filter: blur(14px);
       background: linear-gradient(to bottom, rgba(11,11,16,.75), rgba(11,11,16,.25));
     }
-    .brand{ display:flex; align-items:center; gap:10px; font-weight:900; letter-spacing:.2px; }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:900;
+      letter-spacing:.2px;
+    }
+
     .logo{
-      width: 34px; height: 34px; border-radius: 12px;
-      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,.35), transparent 45%),
-                  linear-gradient(135deg, var(--accent), var(--accent2));
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,.35), transparent 45%),
+        linear-gradient(135deg, var(--accent), var(--accent2));
       border: 1px solid rgba(255,255,255,.18);
       box-shadow: 0 10px 30px rgba(0,0,0,.35);
     }
-    .brand small{ color: var(--muted); font-weight:800; }
-    .nav{ display:flex; gap:12px; }
-    .nav a{
-      text-decoration:none; color: var(--muted); font-weight:900; font-size: 14px;
-      padding: 10px 12px; border-radius: 999px; border: 1px solid transparent;
+
+    .brand small{
+      color: var(--muted);
+      font-weight:800;
     }
-    .nav a:hover{ color: var(--text); border-color: rgba(255,255,255,.16); background: rgba(255,255,255,.06); }
+
+    .nav{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      text-decoration:none;
+      color: var(--muted);
+      font-weight:900;
+      font-size: 14px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: .2s ease;
+    }
+
+    .nav a:hover{
+      color: var(--text);
+      border-color: rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+    }
 
     .panel{
       margin-top: 10px;
@@ -64,39 +112,96 @@
       box-shadow: var(--shadow);
       overflow:hidden;
     }
-    .panel-inner{ padding: 22px; }
 
-    h1{ margin: 0 0 8px; font-size: clamp(26px, 3.8vw, 38px); letter-spacing:-.4px; }
-    .muted{ color: var(--muted); }
+    .panel-inner{
+      padding: 22px;
+    }
+
+    h1{
+      margin: 0 0 8px;
+      font-size: clamp(26px, 3.8vw, 38px);
+      letter-spacing:-.4px;
+    }
+
+    h2{
+      margin: 22px 0 8px;
+      font-size: 16px;
+      letter-spacing: -.2px;
+    }
+
+    p{
+      margin: 0 0 10px;
+      line-height: 1.7;
+      color: rgba(255,255,255,.86);
+    }
+
+    ul{
+      margin: 8px 0 12px 18px;
+      color: rgba(255,255,255,.86);
+      line-height: 1.7;
+    }
+
+    li{
+      margin: 6px 0;
+    }
+
+    a{
+      color: rgba(255,255,255,.92);
+    }
+
+    .link{
+      color: rgba(255,255,255,.92);
+      font-weight:900;
+    }
+
+    .muted{
+      color: var(--muted);
+    }
 
     .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding: 8px 12px; border-radius: 999px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 12px;
+      border-radius: 999px;
       border: 1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.06);
       color: var(--muted);
-      font-size: 13px; font-weight: 900;
+      font-size: 13px;
+      font-weight: 900;
     }
-    .dot{ width: 8px; height: 8px; border-radius: 999px;
+
+    .dot{
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
       box-shadow: 0 0 0 4px rgba(183,110,121,.18);
     }
 
-    h2{ margin: 18px 0 8px; font-size: 16px; letter-spacing: -.2px; }
-    p{ margin: 0 0 10px; line-height: 1.7; color: rgba(255,255,255,.86); }
-    ul{ margin: 8px 0 12px 18px; color: rgba(255,255,255,.86); }
-    li{ margin: 6px 0; }
-    a{ color: rgba(255,255,255,.92); }
-    .link{ color: rgba(255,255,255,.92); font-weight:900; }
-
     .footer{
-      margin-top: 16px;
+      margin-top: 20px;
       padding-top: 14px;
       border-top: 1px solid rgba(255,255,255,.12);
       color: var(--muted);
       font-size: 13px;
-      display:flex; flex-wrap:wrap; gap: 10px;
-      justify-content: space-between; align-items:center;
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+      justify-content: space-between;
+      align-items:center;
+    }
+
+    @media (max-width: 700px){
+      .topbar{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .footer{
+        flex-direction:column;
+        align-items:flex-start;
+      }
     }
   </style>
 </head>
@@ -108,6 +213,7 @@
         <div class="logo" aria-hidden="true"></div>
         <div>Corneon AI <small>• Radio India : Live FM and Music</small></div>
       </div>
+
       <div class="nav">
         <a href="./index.html">Home</a>
         <a href="./support.html">Support</a>
@@ -119,79 +225,114 @@
         <div class="badge"><span class="dot"></span> Privacy Policy</div>
 
         <h1 style="margin-top:12px;">Radio India : Live FM and Music · Privacy Policy</h1>
-        <p class="muted">Last updated: March 2026</p>
+        <p class="muted">Last updated: March 10, 2026</p>
 
         <p>
-          <b>Radio India : Live FM and Music</b> is a radio streaming app published by <b>Corneon AI</b>.
-          We respect your privacy and are committed to protecting your information. This Privacy Policy explains what information may be collected and how it is used.
+          <b>Radio India : Live FM and Music</b> is published by <b>Corneon AI</b>.
+          We respect your privacy and are committed to protecting your information.
+          This Privacy Policy explains what information may be collected, how it may be used,
+          and how third-party radio content is handled in the app.
         </p>
 
         <h2>1) Information We Collect</h2>
         <p>
-          <b>Radio India : Live FM and Music does not require users to create an account</b> and we do not ask for or collect personal information such as your name, phone number, address, contacts, or payment information.
+          Radio India : Live FM and Music does not require users to create an account and does not
+          collect personal information such as your name, phone number, contacts, location, or payment information.
         </p>
 
         <p>The app may automatically collect limited technical information such as:</p>
         <ul>
-          <li><b>App activity & performance data</b> (usage events, crash logs, diagnostics)</li>
-          <li><b>Device information</b> (device model, OS version)</li>
-          <li><b>Network information</b> (connection type)</li>
-          <li><b>Advertising identifier</b> (only if ads are enabled)</li>
+          <li><b>App performance data</b> (crash logs and diagnostics)</li>
+          <li><b>Device information</b> (device model and operating system version)</li>
+          <li><b>Network information</b> (connection type required for streaming)</li>
+          <li><b>Advertising identifiers</b> (only if advertising services are enabled)</li>
         </ul>
 
         <h2>2) How We Use Information</h2>
         <ul>
-          <li>To provide and maintain streaming functionality</li>
-          <li>To improve performance and fix crashes</li>
-          <li>To enhance user experience</li>
-          <li>To display ads (only if enabled)</li>
+          <li>To provide and maintain radio streaming functionality</li>
+          <li>To monitor and improve app performance</li>
+          <li>To diagnose crashes and technical issues</li>
+          <li>To improve overall user experience</li>
+          <li>To display advertisements if advertising services are enabled</li>
         </ul>
 
-        <h2>3) Radio Streams & Content</h2>
+        <h2>3) Third-Party Radio Streams</h2>
         <p>
-          Radio India : Live FM and Music provides access to publicly available radio stream links from third-party providers.
-          We do not host or control radio streams unless explicitly stated. Availability and content are managed by the respective radio stations.
+          Radio India : Live FM and Music is a directory and player for publicly available internet radio streams.
+        </p>
+
+        <p>
+          The app does <b>not host, upload, rebroadcast, or store any radio content</b>.
+          All radio streams are provided by their respective broadcasters and remain hosted on the broadcasters’ servers.
+        </p>
+
+        <p>
+          All trademarks, logos, station names, and audio content belong to their respective owners.
+        </p>
+
+        <p>
+          If you are a radio station owner and believe your stream has been included without permission,
+          you may contact us and we will promptly review and remove the station if requested.
         </p>
 
         <h2>4) Permissions</h2>
         <ul>
-          <li><b>Internet</b>: required to stream radio content</li>
-          <li><b>Media / playback controls</b>: used to support background playback and media controls (if enabled)</li>
+          <li><b>Internet Access</b> – Required to stream radio content from broadcasters</li>
+          <li><b>Media Playback Controls</b> – Enables background playback and system media controls</li>
         </ul>
 
         <h2>5) Third-Party Services</h2>
         <p>
-          The app may use third-party services for analytics, crash reporting, or advertising (if enabled). These services may collect limited technical information in accordance with their own privacy policies.
+          The app may use third-party services such as analytics, crash reporting, or advertising services
+          to help improve the app experience. These services may collect limited technical data according
+          to their own privacy policies.
         </p>
 
         <h2>6) Data Sharing</h2>
         <p>
-          We do not sell your data. Limited technical information may be shared only to operate and improve the app (for example, analytics or crash reporting if enabled).
+          We do not sell, rent, or trade personal information. Limited technical information may be processed
+          by trusted service providers only for the purpose of operating, maintaining, and improving the app.
         </p>
 
         <h2>7) Data Retention</h2>
         <p>
-          Technical information is retained only as long as necessary to maintain the service, analyze performance, or comply with legal obligations.
+          Technical information collected for analytics or diagnostics is retained only as long as necessary
+          to maintain app functionality, improve performance, and comply with legal obligations where required.
         </p>
 
         <h2>8) Security</h2>
-        <p>No method of internet transmission or electronic storage is completely secure, but we take reasonable safeguards.</p>
+        <p>
+          We implement reasonable security measures to protect technical information. However, no method of
+          internet transmission or electronic storage is completely secure.
+        </p>
 
-        <h2>9) Your Choices</h2>
+        <h2>9) User Choices</h2>
         <ul>
-          <li>You may stop using or uninstall the app at any time</li>
-          <li>You can limit advertising identifiers in device settings (if ads are enabled)</li>
+          <li>You may stop using the app at any time</li>
+          <li>You may uninstall the app to stop all app-related data collection</li>
+          <li>You may restrict advertising identifiers in your device settings if ads are enabled</li>
         </ul>
 
         <h2>10) Children’s Privacy</h2>
-        <p>Radio India : Live FM and Music is not directed toward children under the age of 13, and we do not knowingly collect personal information from children.</p>
-
-        <h2>11) Changes to This Policy</h2>
-        <p>We may update this policy from time to time and revise the “Last updated” date accordingly.</p>
-
-        <h2>12) Contact</h2>
         <p>
-          If you have questions about this Privacy Policy, please contact:
+          This app is not directed to children under the age of 13 and we do not knowingly collect
+          personal information from children.
+        </p>
+
+        <h2>11) Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. When updates occur, the
+          “Last updated” date will be revised accordingly.
+        </p>
+
+        <h2>12) Contact Information</h2>
+        <p>
+          If you have any questions about this Privacy Policy or would like to request removal of a radio
+          station from the directory, please contact:
+        </p>
+        <p>
+          Email:
           <a class="link" href="mailto:psgtech.mohan@gmail.com">psgtech.mohan@gmail.com</a>
         </p>
 
